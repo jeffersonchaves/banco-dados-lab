@@ -29,7 +29,6 @@ public class ContatoDAO {
         while (dadosDoBanco.next()){
 
             Contato contato = new Contato();
-
             contato.setId(dadosDoBanco.getLong("id"));
             contato.setNome(dadosDoBanco.getString("nome"));
             contato.setEmail(dadosDoBanco.getString("email"));
