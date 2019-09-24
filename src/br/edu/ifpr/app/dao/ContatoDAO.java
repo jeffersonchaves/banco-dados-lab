@@ -26,6 +26,8 @@ public class ContatoDAO {
 
         ResultSet dadosDoBanco = preparedStatement.executeQuery();
 
+        dadosDoBanco.getDate(1);
+
         while (dadosDoBanco.next()){
 
             Contato contato = new Contato();
