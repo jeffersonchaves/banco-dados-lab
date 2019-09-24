@@ -8,11 +8,10 @@ public class ConnectionFactory {
 
     public Connection getConnection(){
 
-        String dsn = "jdbc:mysql://localhost/myagenda";
         Connection connection = null;
         try {
 
-            connection = DriverManager.getConnection(dsn, "jefferson", "jefferson");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost/myagenda", "jefferson", "jefferson");
 
         } catch (SQLException e) {
             System.out.println("Connection error: " + e.getMessage());
